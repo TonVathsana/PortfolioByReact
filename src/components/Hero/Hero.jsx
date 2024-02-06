@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Hero.module.css";
 import { FaFilePdf} from "react-icons/fa6";
 import img from "../../assets/S__8167426-removebg-preview.png";
-import resume from "../../assets/IMG_3490.png";
+import resume from "../../assets/IMG_3490.pdf";
 import { TypeAnimation } from "react-type-animation";
 import Tilt from "react-parallax-tilt";
 
@@ -11,7 +11,7 @@ function Hero() {
    // Assuming 'img' is the image file
    const link = document.createElement("a");
    link.href = resume;
-   link.download = "Resume_Vathsana.png";
+   link.download = "Resume_Vathsana.pdf";
    link.click();
  };
   return (
