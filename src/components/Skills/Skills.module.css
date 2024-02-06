@@ -7,6 +7,8 @@
     
     & .skills_title{
         margin-top: 40px;
+        font-size: 32px;
+        font-weight: bold;
     }
     & .skills_list{
         display: flex;

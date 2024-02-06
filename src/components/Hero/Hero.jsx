@@ -1,11 +1,19 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import { FaGithub, FaLinkedinIn, FaFacebookF } from "react-icons/fa6";
+import { FaFilePdf} from "react-icons/fa6";
 import img from "../../assets/S__8167426-removebg-preview.png";
+import resume from "../../assets/IMG_3490.png";
 import { TypeAnimation } from "react-type-animation";
 import Tilt from "react-parallax-tilt";
 
 function Hero() {
+ const handleDownload = () => {
+   // Assuming 'img' is the image file
+   const link = document.createElement("a");
+   link.href = resume;
+   link.download = "Resume_Vathsana.png";
+   link.click();
+ };
   return (
     <div className={styles.hero_wrapper}>
       <div className={styles.container}>
@@ -22,6 +30,8 @@ function Hero() {
                   1000, // wait 1s before replacing "Mice" with "Hamsters"
                   "Web Developer",
                   1000,
+                  "Graphic Design",
+                  1000,
                 ]}
                 speed={50}
                 repeat={Infinity}
@@ -34,23 +44,14 @@ function Hero() {
               of technology, I'm a optimist and I like working in a team.{" "}
               <br></br>Inspirationl quote for me " NEVER TRY NEVER FAIL"
             </p>
-            <ul className={styles.hero_social}>
-              <li>
-                <a href="#">
-                  <FaGithub />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <FaFacebookF />
-                </a>
-              </li>
-            </ul>
+            <div className={styles.hero_button}>
+              <a href="#">
+                <FaFilePdf />
+              </a>
+              <a href="#" onClick={handleDownload}>
+                Dowload My Resume
+              </a>
+            </div>
           </div>
           <Tilt scale={1.2} transittionspeed={2500} titleReverse={true}>
             <img src={img} alt="img" className={styles.hero_img} />

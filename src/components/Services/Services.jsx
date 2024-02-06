@@ -9,7 +9,7 @@ function Services() {
       <div className={Styles.services_list}>
         <div className={Styles.services_items}>
           <FaCode />
-          <h4>Web Deverlopement</h4>
+          <h4>Web Development</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt,
             beatae at tempore incidunt non fugiat animi tempora! Facilis
@@ -29,7 +29,7 @@ function Services() {
         </div>
         <div className={Styles.services_items}>
           <FaDesktop />
-          <h4>Front-end consuiting</h4>
+          <h4>Graphic Design</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt,
             beatae at tempore incidunt non fugiat animi tempora! Facilis

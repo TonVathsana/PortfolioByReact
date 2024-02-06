@@ -1,6 +1,6 @@
-import React from 'react'
-import Styles from './Contact.module.css'
-import { FaPhone, FaEnvelope } from 'react-icons/fa6';
+import React from "react";
+import Styles from "./Contact.module.css";
+import { FaPhone, FaEnvelope } from "react-icons/fa6";
 
 function Contact() {
   return (
@@ -20,10 +20,10 @@ function Contact() {
             Bangkok, Thailand
           </p>
           <p>
-            <FaPhone /> (020) 7606 1496
+            <FaPhone /> (020) 9552 6046
           </p>
           <p>
-            <FaEnvelope /> support@site.com
+            <FaEnvelope /> Tonvathsana106@gmail.com
           </p>
         </div>
         <div className={Styles.contact_form}>
@@ -56,4 +56,4 @@ function Contact() {
   );
 }
 
-export default Contact
+export default Contact;

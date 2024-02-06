@@ -26,7 +26,33 @@
             font-size: 16px;
             margin-top: 15px;
             width: 700px;
+
         }
+                & .hero_button {
+                    width: 250px;
+                    height: 35px;
+                    background-color:#115496;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 20px;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    margin-top: 15px;
+                    padding: 20px;
+        
+                    &:hover {
+                        box-shadow: 0 0 20px 0px rgba(11, 54, 96, 0.3);
+                        height: 45px;
+                    }
+        
+                    & a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-weight: bold;
+                        margin: 5px;
+                    }
+                }
         & .hero_social{
             display: flex;
             list-style: none;
